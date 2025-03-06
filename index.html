@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css"
+      type="text/css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Apple SD Gothic Neo" !important;
+      line-height: 1.5;
+    }
+
+    li,
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a:link,
+    a:visited {
+      color: black;
+      text-decoration: none;
+    }
+
+    header .font {
+      font-weight: 700;
+    }
+
+    .main .service {
+      /* padding: 40px 60px; */
+      padding: 40px 0;
+    }
+
+    .service .titFont {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    .service .listTab .btn {
+      border-radius: 20px;
+      background-color: #f1f1f3;
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+
+    .service .listTab .allBtn {
+      background-color: #202020;
+      color: white;
+      font-weight: 700;
+    }
+
+    .service .card {
+      border-radius: 30px;
+      overflow: hidden;
+    }
+
+    .service .cardImg:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+
+    .service .boxImg {
+      overflow: hidden;
+    }
+
+    .service .cardImg {
+      width: 100%;
+      height: auto;
+    }
+
+    .service .boxCard {
+      flex-direction: column;
+      background-color: #272727;
+    }
+
+    .service .txtSub {
+      font-weight: 700;
+      color: white;
+    }
+
+    .service .titCard {
+      font-size: 32px;
+      font-weight: 700;
+      color: white;
+    }
+
+    .service .txtCard {
+      color: white;
+    }
+
+    .container3 {
+      overflow: hidden;
+      margin: 0 auto;
+      padding: 0;
+      border-radius: 7px;
+    }
+
+    .epel {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+
+    .boxImg {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+  </style>
+  <body>
+    <header class="header container">
+      <div class="d-flex justify-content-between align-items-center py-2 pt-4">
+        <div class="">
+          <img src="/250304/images/logo_kakaoimpact.png" alt="" class="" />
+        </div>
+        <div class="">
+          <ul class="d-flex">
+            <li class="font px-3">
+              <a href="#" class="p-2">카카오임팩트</a>
+            </li>
+            <li class="font px-3">
+              <a href="#" class="p-2">사업소개</a>
+            </li>
+            <li class="font px-3">
+              <a href="#" class="p-2">새소식</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex gap-3">
+          <img src="/250304/images/ico_dark.svg" alt="" />
+          <img src="/250304/images/ico_menu.svg" alt="" class="pb-1" />
+        </div>
+      </div>
+    </header>
+    <hr />
+    <section class="main container">
+      <section class="service">
+        <h4 class="titFont">기술과 사람이 만드는<br />더 나은 세상</h4>
+        <ul class="listTab d-flex gap-2">
+          <li><button class="btn allBtn">전체</button></li>
+          <li><button class="btn">Tech for Good</button></li>
+          <li><button class="btn">Digital for All</button></li>
+          <li><button class="btn">PlatFrom for Impact</button></li>
+        </ul>
+        <div class="groupSlide mt-2">
+          <div class="slide d-flex gap-3">
+            <div class="card col-8 col-md-6 col-lg-4">
+              <div class="boxImg">
+                <img
+                  src="/250304/images/img_card_tech.png"
+                  alt=""
+                  class="cardImg"
+                />
+              </div>
+
+              <div class="boxCard d-flex p-4">
+                <span class="txtSub">Tech for Good</span>
+                <strong class="titCard">테크포임팩트</strong>
+                <span class="txtCard pt-5"
+                  >문제해결과 혁신을 위한 길,<br />기술은 임팩트를 가속화
+                  합니다.</span
+                >
+              </div>
+            </div>
+            <div class="card col-8 col-md-6 col-lg-4">
+              <div class="boxImg">
+                <img
+                  src="/250304/images/img_card_tech.png"
+                  alt=""
+                  class="cardImg"
+                />
+              </div>
+
+              <div class="boxCard d-flex p-4">
+                <span class="txtSub">Tech for Good</span>
+                <strong class="titCard">테크포임팩트</strong>
+                <span class="txtCard pt-5"
+                  >문제해결과 혁신을 위한 길,<br />기술은 임팩트를 가속화
+                  합니다.</span
+                >
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="news"></section>
+      <section class="banner"></section>
+    </section>
+    <footer class="impact"></footer>
+  </body>
+</html>
